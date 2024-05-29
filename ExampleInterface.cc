@@ -29,12 +29,10 @@ class Circle: public Shape{
 };
 
 int main() {
-    Shape* ptr;
-    Rectangle rectangle(5, 6);
-    ptr = &rectangle;
-    std::cout<<"Area of a rectangle: "<<ptr->GetArea()<<std::endl;
-    Circle circle(2);
-    ptr = &circle;
-    std::cout<<"Area of a circle: "<<ptr->GetArea()<<std::endl;
+    Shape *rectangle, *circle;
+    rectangle = new Rectangle(5, 6);
+    std::cout<<"Area of a rectangle: "<<rectangle->GetArea()<<std::endl;
+    circle = new Circle(2);
+    std::cout<<"Area of a circle: "<<circle->GetArea()<<std::endl;
     return 0;
 }
