@@ -1,6 +1,7 @@
 #include <iostream>
 #include <thread>
 #include <mutex>
+/// @remark simple code for thread 
 
 std::mutex mtx;
 int counter = 0;
